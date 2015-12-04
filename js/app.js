@@ -1,7 +1,7 @@
 /* FoundationCDN */
 ;(function($){
 	var CDN_ROOT = 'https://cdn.jsdelivr.net';
-	var PROJECT_NAME = 'foundation';
+	var PROJECT_NAME = window.app.projectName;
 	var CSS_PATTERN = /\.css$/i;
 	var JS_PATTERN = /\.js$/i;
 	var versions, selectedVersion;
@@ -138,6 +138,17 @@
 	hamburger();
 
 	/* ---------------------------------------------------------------------- */
+	/*	Our CDN Features
+	/* ---------------------------------------------------------------------- */
+	$('#view-features, #view-features-m').on('click', function () {
+		$('html, body').animate({
+			scrollTop: $("#our-features").offset().top
+		}, 400);
+
+		return false;
+	});
+
+	/* ---------------------------------------------------------------------- */
 	/*	Responsive menu
 	/* ---------------------------------------------------------------------- */
 	function dropdown(){
@@ -247,16 +258,21 @@
 	/* ---------------------------------------------------------------------- */
 	/*	Fill in data
 	/* ---------------------------------------------------------------------- */
-	$.getJSON('js/cdnfiles.json', function (data) {
+	$.getJSON('js/' + window.app.projectName + '.json', function (data) {
 		versions = data.vers;
 		selectedVersion = versions.sort(function (a, b) {
 			return a.num < b.num;
 		})[0];
 
+		$('#version-dropdown').empty().append(versions.map(function (version) {
+			return $('<li><a href="#">' + version.name +'</a></li>');
+		}));
+
 		$('#getjs').val(getFileLink(selectedVersion.mainJs, selectedVersion.name));
 		$('#getcss').val(getFileLink(selectedVersion.mainCss, selectedVersion.name));
 		updateFileList(selectedVersion);
 		updateCustomLink();
+		updateDropdown();
 		updateModal();
 		/* bindZeroClipboard(); */
 	});
@@ -264,12 +280,30 @@
 	/* ---------------------------------------------------------------------- */
 	/*	Quick Use
 	/* ---------------------------------------------------------------------- */
-	$('#addTag').on('change', updateQuickUse);
-	$('#enableSRI').on('change', updateQuickUse);
+	$('#addTag').on('change', updateAddTag);
+	$('#enableSRI').on('change', updateEnableSri);
 
 	function updateQuickUse () {
 		$('#getjs').val(getFileLink(selectedVersion.mainJs, selectedVersion.name, $('#addTag').is(':checked'), $('#enableSRI').is(':checked') && selectedVersion.sri[selectedVersion.mainJs]));
 		$('#getcss').val(getFileLink(selectedVersion.mainCss, selectedVersion.name, $('#addTag').is(':checked'), $('#enableSRI').is(':checked') && selectedVersion.sri[selectedVersion.mainCss]));
+	}
+
+	function updateAddTag () {
+		if (!$(this).is(':checked')) {
+			$('#enableSRI').prop('checked', false);
+		}
+
+		updateQuickUse();
+	}
+
+	function updateEnableSri () {
+		if ($(this).is(':checked')) {
+			$('#addTag').prop('checked', true);
+		} else {
+			$('#addTag').prop('checked', false);
+		}
+
+		updateQuickUse();
 	}
 
 	/* ---------------------------------------------------------------------- */
@@ -307,12 +341,12 @@
 		});
 
 		$('#cdn-files-list').empty().append(files);
-	
+
 		$('#cdn-files-list li').hide().filter(':lt(5)').show();
 		$('#cdn-files-list').append('<li class="showmoreless"><span><i class="fa fa-chevron-down"></i> Show more...</span><span class="less"><i class="fa fa-chevron-up"></i> Show less...</span></li>').find('li:last').click(function(){
-			$(this).siblings(':gt(1)').slideToggle('fast', 'linear').end().find('span').slideToggle('fast', 'linear');
-		});	
-	
+			$(this).siblings(':gt(4)').slideToggle('fast', 'linear').end().find('span').slideToggle('fast', 'linear');
+		});
+
 	}
 
 	/* ---------------------------------------------------------------------- */
@@ -378,13 +412,18 @@
 			return version.name === $(this).text();
 		}, this)[0];
 
-		$('#selected-version').text(selectedVersion.name);
 		updateFileList(selectedVersion);
 		updateCustomLink();
+		updateDropdown();
 		updateModal();
 
 		return false;
 	});
+
+	function updateDropdown () {
+		$('#selected-version').text(selectedVersion.name);
+		$('#download-link').attr('href', 'https://cdn.jsdelivr.net/' + PROJECT_NAME + '/' + selectedVersion.name + '/' + PROJECT_NAME + '.zip');
+	}
 
 	/* ---------------------------------------------------------------------- */
 	/*	Copy to clipboard by either:

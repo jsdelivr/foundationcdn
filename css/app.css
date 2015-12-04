@@ -128,9 +128,9 @@ button, .button {
 	border-color: #007095;
 	color: #FFFFFF;
 	transition: background-color 300ms ease-out; }
-	button:hover, button:focus, .button:hover, .button:focus {
+	button:hover, button.zeroclipboard-is-hover, button:focus, .button:hover, .button.zeroclipboard-is-hover, .button:focus {
 		background-color: #007095; }
-	button:hover, button:focus, .button:hover, .button:focus {
+	button:hover, button.zeroclipboard-is-hover, button:focus, .button:hover, .button.zeroclipboard-is-hover, .button:focus {
 		color: #FFFFFF; }
 	button.secondary, .button.secondary {
 		background-color: #e7e7e7;
@@ -148,15 +148,15 @@ button, .button {
 			background-color: #368a55; }
 		button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
 			color: #ffffff; }
-			
+
 	button.white-outline, .button.white-outline {
 		background-color: transparent;
 		border:0.2rem solid #ffffff;
 		color: #FFFFFF;
 	padding: 0.67rem 1.875rem 0.67rem 1.875rem;	}
-		button.white-outline:hover, button.white-outline:focus, .button.white-outline:hover, .button.white-outline:focus {
+		button.white-outline:hover, button.white-outline.zeroclipboard-is-hover, button.white-outline:focus, .button.white-outline:hover, .button.white-outlinezeroclipboard-is-hover, .button.white-outline:focus {
 			background-color: #ffffff; }
-		button.white-outline:hover, button.white-outline:focus, .button.white-outline:hover, .button.white-outline:focus {
+		button.white-outline:hover, button.white-outline.zeroclipboard-is-hover, button.white-outline:focus, .button.white-outline:hover, .button.white-outlinezeroclipboard-is-hover, .button.white-outline:focus {
 			color: #323232; }
 	button.alert, .button.alert {
 		background-color: #f04124;
@@ -437,7 +437,7 @@ input:not([type]), input[type="text"], input[type="password"], input[type="date"
 	top:-3.75rem;
 	left: 0;
 	right: 0;
-	z-index:999;
+	z-index:9999;
 	transition:0.2s top cubic-bezier(.3, .73, .3, .74);
 }
 body.down .top-nav.fixed {
@@ -508,7 +508,7 @@ ul, menu, dir {
 	margin: 0 0 0 3.75rem;
 }
 .menu-nav ul li {
-	margin: 0 1.625rem 0 0;	
+	margin: 0 1.625rem 0 0;
 	float: left;
 	line-height: 3.5rem;
 }
@@ -531,6 +531,9 @@ ul, menu, dir {
 	border-bottom: 0.1875rem solid #43ac6a;
 }
 .mobile-nav {display: none; margin: 0 0 0 3.75rem;}
+.mobile-nav ul {
+	padding: 0;
+}
 #hamburger {
 	display:none;
 	box-sizing: border-box;
@@ -932,6 +935,7 @@ header .titles {
 	font-weight: bold;
 }
 .versions ul {
+	padding: 0;
 	display: none;
 	list-style-type: none;
 	overflow: hidden;
@@ -1024,6 +1028,7 @@ header .titles {
 }
 .cf-list ul {
 	list-style: none;
+	padding: 0;
 }
 .cf-list ul li {
 	height: 2.88rem;
@@ -1202,6 +1207,9 @@ a.close:hover {
 .cnt {
 	position: relative;
 }
+.cnt ul {
+	padding: 0;
+}
 .top {
 	margin: 1.25rem;
 	display: inline-block;
@@ -1273,4 +1281,68 @@ a.close:hover {
 	text-align: left;
 	word-wrap: break-word;
 	word-break: break-all;
+	display: inline-block;
+	padding: 0.84rem 0;
+}
+
+#forkongithub a {
+	background: #a50000;
+	color: #fff;
+	text-decoration: none;
+	font-family: arial, sans-serif;
+	text-align: center;
+	font-weight: bold;
+	padding: 5px 40px;
+	font-size: 1rem;
+	line-height: 2rem;
+	position: relative;
+	transition: 0.5s;
+	box-sizing: content-box;
+}
+
+#forkongithub a:hover {
+	background: #c11;
+	color: #fff;
+}
+
+#forkongithub a::before, #forkongithub a::after {
+	content: "";
+	width: 100%;
+	display: block;
+	position: absolute;
+	top: 1px;
+	left: 0;
+	height: 1px;
+	background: #fff;
+}
+
+#forkongithub a::after {
+	bottom: 1px;
+	top: auto;
+}
+
+@media screen and (min-width: 800px) {
+	#forkongithub {
+		position: absolute;
+		display: block;
+		top: 0;
+		left: 0;
+		width: 200px;
+		overflow: hidden;
+		height: 200px;
+		z-index: 9999;
+	}
+
+	#forkongithub a {
+		width: 200px;
+		position: absolute;
+		top: 60px;
+		left: -60px;
+		transform: rotate(-45deg);
+		-webkit-transform: rotate(-45deg);
+		-ms-transform: rotate(-45deg);
+		-moz-transform: rotate(-45deg);
+		-o-transform: rotate(-45deg);
+		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
+	}
 }

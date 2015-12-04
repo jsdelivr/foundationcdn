@@ -13,6 +13,8 @@
 	<link rel="stylesheet" href="css/app.css">
 </head>
 <body>
+	<span id="forkongithub"><a href="https://github.com/jsdelivr/foundationcdn">Fork me on GitHub</a></span>
+
 	<div class="inner-wrap">
 		<!-- Top Nav Section -->
 		<div class="top-nav">
@@ -34,7 +36,7 @@
 										<li><a href="index.html">Foundation Framework</a></li>
 										<li><a href="icons.html">Foundation Icons</a></li>
 										<li><a href="rtl.html">Foundation RTL</a></li>
-										<li><a href="#" id="view-features">Our CDN Features</a></li>
+										<li><a href="#" id="view-features-m">Our CDN Features</a></li>
 									</ul>
 								</div>
 							</div>
@@ -98,7 +100,7 @@
 							<a href="https://api.jsdelivr.com/v1/jsdelivr/libraries?name=foundation-icons" class="button left" target="_blank">
 								<i class="fa fa-gear"></i> API
 							</a>
-							<a href="https://cdn.jsdelivr.net/foundation-icons/3.0/foundation-icons.zip" class="button left" target="_blank">
+							<a id="download-link" href="#" class="button left" target="_blank">
 								<i class="fa fa-download"></i> Download
 							</a>
 							<button class="button right" title="" data-clipboard-target="getcss">
@@ -143,7 +145,7 @@
 		</header>
 		<!-- (END) Header Section -->
 		<!-- Footer Section (Our CDN Features) -->
-		<footer class="icons-page">
+		<footer id="our-features" class="icons-page">
 			<div class="container">
 				<div class="ocf-title">Our CDN Features:</div>
 				<!-- Features List Section -->
@@ -211,7 +213,8 @@
 </body>
 <script src="https://cdn.jsdelivr.net/jquery/2.1.4/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/zeroclipboard/2.2.0/ZeroClipboard.min.js"></script>
-<script src="js/icons.js"></script>
+<script>window.app = { projectName: 'foundation-icons' };</script>
+<script src="js/app.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
