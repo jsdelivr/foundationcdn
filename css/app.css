@@ -1281,6 +1281,8 @@ a.close:hover {
 	text-align: left;
 	word-wrap: break-word;
 	word-break: break-all;
+	display: inline-block;
+	padding: 0.84rem 0;
 }
 
 #forkongithub a {
