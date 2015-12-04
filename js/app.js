@@ -189,7 +189,6 @@
 // Defining a function to set size for #hero
 	function fullscreen(){
 		jQuery('header').css({
-			width: jQuery(window).width(),
 			height: jQuery(window).height()-58+'px'
 		});
 	}
