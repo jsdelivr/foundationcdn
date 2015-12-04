@@ -1,0 +1,16 @@
+{
+	"vers": [
+		{
+            "num": 30,
+            "name": "3.0",
+            "mainJs": "",
+            "mainCss": "foundation-icons.min.css",
+            "files": [         
+                  "foundation-icons.min.css"
+            ],
+            "sri": {
+                  "foundation-icons.min.css" : "sha256-rptQE7y3rR7k/G/mLsEuCgAXUc0DOyCB8df62eIsykQ="
+                  }
+            }
+	]
+}
