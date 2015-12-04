@@ -264,12 +264,30 @@
 	/* ---------------------------------------------------------------------- */
 	/*	Quick Use
 	/* ---------------------------------------------------------------------- */
-	$('#addTag').on('change', updateQuickUse);
-	$('#enableSRI').on('change', updateQuickUse);
+	$('#addTag').on('change', updateAddTag);
+	$('#enableSRI').on('change', updateEnableSri);
 
 	function updateQuickUse () {
 		$('#getjs').val(getFileLink(selectedVersion.mainJs, selectedVersion.name, $('#addTag').is(':checked'), $('#enableSRI').is(':checked') && selectedVersion.sri[selectedVersion.mainJs]));
 		$('#getcss').val(getFileLink(selectedVersion.mainCss, selectedVersion.name, $('#addTag').is(':checked'), $('#enableSRI').is(':checked') && selectedVersion.sri[selectedVersion.mainCss]));
+	}
+
+	function updateAddTag () {
+		if (!$(this).is(':checked')) {
+			$('#enableSRI').prop('checked', false);
+		}
+
+		updateQuickUse();
+	}
+
+	function updateEnableSri () {
+		if ($(this).is(':checked')) {
+			$('#addTag').prop('checked', true);
+		} else {
+			$('#addTag').prop('checked', false);
+		}
+
+		updateQuickUse();
 	}
 
 	/* ---------------------------------------------------------------------- */
@@ -307,12 +325,12 @@
 		});
 
 		$('#cdn-files-list').empty().append(files);
-	
+
 		$('#cdn-files-list li').hide().filter(':lt(5)').show();
 		$('#cdn-files-list').append('<li class="showmoreless"><span><i class="fa fa-chevron-down"></i> Show more...</span><span class="less"><i class="fa fa-chevron-up"></i> Show less...</span></li>').find('li:last').click(function(){
 			$(this).siblings(':gt(1)').slideToggle('fast', 'linear').end().find('span').slideToggle('fast', 'linear');
-		});	
-	
+		});
+
 	}
 
 	/* ---------------------------------------------------------------------- */
