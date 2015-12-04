@@ -128,9 +128,9 @@ button, .button {
 	border-color: #007095;
 	color: #FFFFFF;
 	transition: background-color 300ms ease-out; }
-	button:hover, button:focus, .button:hover, .button:focus {
+	button:hover, button.zeroclipboard-is-hover, button:focus, .button:hover, .button.zeroclipboard-is-hover, .button:focus {
 		background-color: #007095; }
-	button:hover, button:focus, .button:hover, .button:focus {
+	button:hover, button.zeroclipboard-is-hover, button:focus, .button:hover, .button.zeroclipboard-is-hover, .button:focus {
 		color: #FFFFFF; }
 	button.secondary, .button.secondary {
 		background-color: #e7e7e7;
@@ -154,9 +154,9 @@ button, .button {
 		border:0.2rem solid #ffffff;
 		color: #FFFFFF;
 	padding: 0.67rem 1.875rem 0.67rem 1.875rem;	}
-		button.white-outline:hover, button.white-outline:focus, .button.white-outline:hover, .button.white-outline:focus {
+		button.white-outline:hover, button.white-outline.zeroclipboard-is-hover, button.white-outline:focus, .button.white-outline:hover, .button.white-outlinezeroclipboard-is-hover, .button.white-outline:focus {
 			background-color: #ffffff; }
-		button.white-outline:hover, button.white-outline:focus, .button.white-outline:hover, .button.white-outline:focus {
+		button.white-outline:hover, button.white-outline.zeroclipboard-is-hover, button.white-outline:focus, .button.white-outline:hover, .button.white-outlinezeroclipboard-is-hover, .button.white-outline:focus {
 			color: #323232; }
 	button.alert, .button.alert {
 		background-color: #f04124;
