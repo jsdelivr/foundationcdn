@@ -3,8 +3,8 @@
         {
             "num": 605,
             "name": "6.0.5",
-            "mainJs": "js/foundation.min.js",
-            "mainCss": "css/foundation.min.css",
+            "mainJs": "foundation.min.js",
+            "mainCss": "foundation.min.css",
             "files": [
                 "foundation.min.css",
                 "foundation.min.js",
