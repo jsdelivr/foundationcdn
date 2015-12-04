@@ -253,6 +253,11 @@
 			return a.num < b.num;
 		})[0];
 
+		$('#selected-version').text(selectedVersion.name);
+		$('#version-dropdown').empty().append(versions.map(function (version) {
+			return $('<li><a href="#">' + version.name +'</a></li>');
+		}));
+
 		$('#getjs').val(getFileLink(selectedVersion.mainJs, selectedVersion.name));
 		$('#getcss').val(getFileLink(selectedVersion.mainCss, selectedVersion.name));
 		updateFileList(selectedVersion);
