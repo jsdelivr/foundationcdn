@@ -13,8 +13,8 @@ $lastfour = array_shift(array_values($four));
 //six
 $final['vers'][0]['num'] = str_replace(".","",$lastsix);
 $final['vers'][0]['name'] = $lastsix;
-$final['vers'][0]['mainJs'] = 'js/foundation.min.js';
-$final['vers'][0]['mainCss'] = 'css/foundation.min.css';
+$final['vers'][0]['mainJs'] = 'foundation.min.js';
+$final['vers'][0]['mainCss'] = 'foundation.min.css';
 $final['vers'][0]['files'] = $data[0]->assets[0]->files;
 
 foreach($data[0]->assets[0]->files as $file){
