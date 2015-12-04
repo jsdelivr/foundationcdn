@@ -446,7 +446,9 @@
 		if (addTag || sri) {
 			return CSS_PATTERN.test(link)
 				? getCssLink(link, sri)
-				: getScriptLink(link, sri);
+				: JS_PATTERN.test(link)
+					? getScriptLink(link, sri)
+					: link;
 		}
 
 		return link;
@@ -523,7 +525,7 @@
 			return [ getFileLink(files[0], version.name, addTag) ];
 		}
 
-		var link = CDN_ROOT + '/' + PROJECT_NAME + '@' + version.name + '(' + files.join('+') + ')';
+		var link = CDN_ROOT + '/g/' + PROJECT_NAME + '@' + version.name + '(' + files.join('+') + ')';
 
 		return [ addTag ? linkFn(link) : link ];
 	}
