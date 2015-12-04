@@ -344,7 +344,7 @@
 
 		$('#cdn-files-list li').hide().filter(':lt(5)').show();
 		$('#cdn-files-list').append('<li class="showmoreless"><span><i class="fa fa-chevron-down"></i> Show more...</span><span class="less"><i class="fa fa-chevron-up"></i> Show less...</span></li>').find('li:last').click(function(){
-			$(this).siblings(':gt(1)').slideToggle('fast', 'linear').end().find('span').slideToggle('fast', 'linear');
+			$(this).siblings(':gt(4)').slideToggle('fast', 'linear').end().find('span').slideToggle('fast', 'linear');
 		});
 
 	}
