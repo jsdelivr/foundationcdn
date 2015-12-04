@@ -148,7 +148,7 @@ button, .button {
 			background-color: #368a55; }
 		button.success:hover, button.success:focus, .button.success:hover, .button.success:focus {
 			color: #ffffff; }
-			
+
 	button.white-outline, .button.white-outline {
 		background-color: transparent;
 		border:0.2rem solid #ffffff;
@@ -508,7 +508,7 @@ ul, menu, dir {
 	margin: 0 0 0 3.75rem;
 }
 .menu-nav ul li {
-	margin: 0 1.625rem 0 0;	
+	margin: 0 1.625rem 0 0;
 	float: left;
 	line-height: 3.5rem;
 }
@@ -531,6 +531,9 @@ ul, menu, dir {
 	border-bottom: 0.1875rem solid #43ac6a;
 }
 .mobile-nav {display: none; margin: 0 0 0 3.75rem;}
+.mobile-nav ul {
+	padding: 0;
+}
 #hamburger {
 	display:none;
 	box-sizing: border-box;
@@ -932,6 +935,7 @@ header .titles {
 	font-weight: bold;
 }
 .versions ul {
+	padding: 0;
 	display: none;
 	list-style-type: none;
 	overflow: hidden;
@@ -1024,6 +1028,7 @@ header .titles {
 }
 .cf-list ul {
 	list-style: none;
+	padding: 0;
 }
 .cf-list ul li {
 	height: 2.88rem;
@@ -1201,6 +1206,9 @@ a.close:hover {
 }
 .cnt {
 	position: relative;
+}
+.cnt ul {
+	padding: 0;
 }
 .top {
 	margin: 1.25rem;
