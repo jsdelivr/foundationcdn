@@ -1,7 +1,7 @@
 /* FoundationCDN */
 ;(function($){
 	var CDN_ROOT = 'https://cdn.jsdelivr.net';
-	var PROJECT_NAME = 'foundation';
+	var PROJECT_NAME = window.app.projectName;
 	var CSS_PATTERN = /\.css$/i;
 	var JS_PATTERN = /\.js$/i;
 	var versions, selectedVersion;
@@ -247,7 +247,7 @@
 	/* ---------------------------------------------------------------------- */
 	/*	Fill in data
 	/* ---------------------------------------------------------------------- */
-	$.getJSON('js/cdnfiles.json', function (data) {
+	$.getJSON('js/' + window.app.projectName + '.json', function (data) {
 		versions = data.vers;
 		selectedVersion = versions.sort(function (a, b) {
 			return a.num < b.num;
