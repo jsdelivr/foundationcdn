@@ -253,7 +253,6 @@
 			return a.num < b.num;
 		})[0];
 
-		$('#selected-version').text(selectedVersion.name);
 		$('#version-dropdown').empty().append(versions.map(function (version) {
 			return $('<li><a href="#">' + version.name +'</a></li>');
 		}));
@@ -262,6 +261,7 @@
 		$('#getcss').val(getFileLink(selectedVersion.mainCss, selectedVersion.name));
 		updateFileList(selectedVersion);
 		updateCustomLink();
+		updateDropdown();
 		updateModal();
 		/* bindZeroClipboard(); */
 	});
@@ -401,13 +401,18 @@
 			return version.name === $(this).text();
 		}, this)[0];
 
-		$('#selected-version').text(selectedVersion.name);
 		updateFileList(selectedVersion);
 		updateCustomLink();
+		updateDropdown();
 		updateModal();
 
 		return false;
 	});
+
+	function updateDropdown () {
+		$('#selected-version').text(selectedVersion.name);
+		$('#download-link').attr('href', 'https://cdn.jsdelivr.net/' + PROJECT_NAME + '/' + selectedVersion.name + '/' + PROJECT_NAME + '.zip');
+	}
 
 	/* ---------------------------------------------------------------------- */
 	/*	Copy to clipboard by either:
