@@ -1350,3 +1350,7 @@ a.close:hover {
 		box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.8);
 	}
 }
+
+body {
+	 min-width: 1300px;
+}
