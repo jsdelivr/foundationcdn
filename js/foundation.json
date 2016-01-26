@@ -1,8 +1,8 @@
 {
 "vers": [
 {
-"num": 611,
-"name": "6.1.1",
+"num": 612,
+"name": "6.1.2",
 "mainJs": "foundation.min.js",
 "mainCss": "foundation.min.css",
 "files": [
@@ -38,36 +38,36 @@
 "js/foundation.util.triggers.js"
 ],
 "sri": {
-"foundation.min.css": "sha256-r0wcIKU1PTJnW/DiYo5WDIEkG2YDqX5/iN/Ez2xEI/Q=",
-"foundation.min.js": "sha256-TtdCGlgVTEs/WjZZF+ZkbB6Hk7n2/x6aiTBOEpOaoYs=",
-"js/foundation.abide.js": "sha256-UahLxrpJCpQjk7ynEsbnzZkW/E3GSnaTqOBozZYIWCI=",
-"js/foundation.accordion.js": "sha256-FZJqbFMEpe6TrrqtGLLpc1imyDv1WuPuLI5e/G0J3N8=",
-"js/foundation.accordionMenu.js": "sha256-9lqT1VaZ/2ZAl9asGP61a3HI0bTKgIQMNQ+TegYC7ms=",
-"js/foundation.core.js": "sha256-nbH9JQk+5qDCT8e5Pp+8WeHGRMxNFbntB+y6wPINJiY=",
-"js/foundation.drilldown.js": "sha256-08Z3kA0rbnxodYkJT/SGouGrBIsLr82BSsiaXFjP/x0=",
-"js/foundation.dropdown.js": "sha256-8xBMWhEljyT7JZAK7X/7UUOAZ/lV0QjzPwL12YrIMK4=",
-"js/foundation.dropdownMenu.js": "sha256-n/ZhyAUjeNc+5kc4aMIZhjSFlv3utVQ71TuwJ3laqto=",
-"js/foundation.equalizer.js": "sha256-sLzpDlwo/DccoWP5oJr46n96MUQg2p3EKw224v+LCQo=",
-"js/foundation.interchange.js": "sha256-+5cX7F215XusTipdaZbk4v/xLbHkE34TvC/0E8cmo2Y=",
-"js/foundation.magellan.js": "sha256-IyXiKjn45Tk6IWIpV/CiholTIOTdYgcw9fr4U3R88T0=",
-"js/foundation.offcanvas.js": "sha256-Svr8H5YodwaIh5tdGJIqgjbyoC0BEAtU1cFQgl2iBII=",
-"js/foundation.orbit.js": "sha256-J0UmV0CA7ERV1IOnNWN8vb2ID0yP4rZu/RJ11jMGw1s=",
-"js/foundation.responsiveMenu.js": "sha256-owT/QBUHFywVVx4bvk44SHx+WiioRooE5E8I9ik5Up0=",
+"foundation.min.css": "sha256-ZVejNUFfkskPWeckewcs0dnPJa1ubBu9mF+ejsjoPDg=",
+"foundation.min.js": "sha256-RKexMIEYcvQSXDkHJ0qLXFXZiXfl3nkeMJovUep4iS0=",
+"js/foundation.abide.js": "sha256-nef6ao9574GFaKZis+78YSBh7qSLEnwRIGk1t7n/aqs=",
+"js/foundation.accordion.js": "sha256-GSy4axgmbwBUGq2Mqik7Ap0uiUMLZtBtu9ZdJRpDp3k=",
+"js/foundation.accordionMenu.js": "sha256-KUtqGVmXSvTvkWrIFesSRL58+f9hACa3UZeWRnuVW2U=",
+"js/foundation.core.js": "sha256-FIuCKpYOPs+tUM+AYM7xZY4afdFXcQ7OogcaTJdGvfI=",
+"js/foundation.drilldown.js": "sha256-zPZWAOdPyyFXLar35TeYlinJPW1x7UhdwvkmIperILA=",
+"js/foundation.dropdown.js": "sha256-6W6ogPprZo/QCJ7GVXRRSc0xC6292XZjUO6v3CNmUoo=",
+"js/foundation.dropdownMenu.js": "sha256-jCUIgDkaGdsWMd9+1zjBGCp4O5xoZj0Lfud51rE/EmY=",
+"js/foundation.equalizer.js": "sha256-gRcShXH0Zyo/Wj+AwHtwVcrc7VDT2SfF7ravm3Namas=",
+"js/foundation.interchange.js": "sha256-IHeJZevoUuIEAqQA86+GyogQ+PWagtyR3jObOn1qG9A=",
+"js/foundation.magellan.js": "sha256-2Po/hFezH245XzT9R7L13ejhr9fjJa+daa516IwPogA=",
+"js/foundation.offcanvas.js": "sha256-YxCxei/6Zcz3DM6uIqQWkVde+Uyr2+Xng1DOKBTS3Ec=",
+"js/foundation.orbit.js": "sha256-2lQJrRCF+v83aUo0dcrRKXsSdy5CZ1vmZYiO8zcwHIU=",
+"js/foundation.responsiveMenu.js": "sha256-p42lkBMWsAv+dztpHnuBhD7VJlFF4PJ0sgg8ODeSe/E=",
 "js/foundation.responsiveToggle.js": "sha256-UsU517gjNjvefLlnR5p6WBLEkuzqfl6xvdxsCipcCtU=",
-"js/foundation.reveal.js": "sha256-9hMshiCShuea5yLxDWoxyiU+MfvAMSH3TGpqXhc3eFs=",
-"js/foundation.slider.js": "sha256-C4G38/s62CxNMybfgZ5wVEz4GCleKJOoZX4nhDX3tm0=",
+"js/foundation.reveal.js": "sha256-W5Ll+S3fATNIRrMLJsFkBMyh++iKPpowIuHa29tFVak=",
+"js/foundation.slider.js": "sha256-rCcuvik4xmQKGUHEjnhLn1OiDq319OV0CfXRfBgf44U=",
 "js/foundation.sticky.js": "sha256-qJ5BnZYBorSwDyHpduRsCch4ij4cGuWQUE7KywXRlZM=",
-"js/foundation.tabs.js": "sha256-2GrMOpUAf35mmImYFdx4+/0nyYFzX8L96aOJXGhDuK0=",
+"js/foundation.tabs.js": "sha256-KV7QKGviBOYtbCVfH9JAGCNPk8/ASWnLyU6/VaK+5uY=",
 "js/foundation.toggler.js": "sha256-G+nOiwtqoSMIPj4Orfnm6Caa6G4WGcRSWBh1iVOQ6gE=",
-"js/foundation.tooltip.js": "sha256-dQCM3GROzOiJYQfnALKS1X78ns0Gj+MnRdkzBOFzKd0=",
+"js/foundation.tooltip.js": "sha256-FmYDyewYVy5E27TOVhLw6ukqnKZQrXTrBt7eojKoKpY=",
 "js/foundation.util.box.js": "sha256-ackJXCa+MLm3luxMwi6yppTlw49Rd7zHsPfjMsQXWLM=",
 "js/foundation.util.keyboard.js": "sha256-8F5HLWhplmz9A/dnF8drBwpntdgYBnhOf76E7IKiQOI=",
 "js/foundation.util.mediaQuery.js": "sha256-XbURvsNQEY23ls0dAqKPEnOyILFJ1AItvWObugGh+ys=",
 "js/foundation.util.motion.js": "sha256-1LNxlgihrmdiNiRJhzWuwRATjbPa7wxofBIreJuu4CI=",
-"js/foundation.util.nest.js": "sha256-iigno0hJEs31IHDDJFYR0PNunEqnkPJVjyJx+K25Tjg=",
-"js/foundation.util.timerAndImageLoader.js": "sha256-ukKYbiA62J4gHtKdFBm5Ie9OmFLMXyqAE0fTcKV3jFY=",
-"js/foundation.util.touch.js": "sha256-hBL7/iTRBT89wSyAqw/z3BUk1p3g4VSxWMWm/w0W144=",
-"js/foundation.util.triggers.js": "sha256-XZOuBoFk/EzEw+moyMuYvOWSLWNZSs+PciX0mhF4BTU="
+"js/foundation.util.nest.js": "sha256-RVnQYc28bGsMUzKXbaxYzospk/agnUk0HIQe+6H645E=",
+"js/foundation.util.timerAndImageLoader.js": "sha256-NTGP2ffppSga+IUzTGX093ijXS3/zP/SGnRAe2Qkg3U=",
+"js/foundation.util.touch.js": "sha256-KXGYcRKTJ+I1oj7lw1CBX253vGUBFBNjWUBE4+N6AZM=",
+"js/foundation.util.triggers.js": "sha256-LwKTDJhdyxQai/6AQxKFTasyu92vuNg6/nm8yMm9er0="
 }
 },
 {
@@ -180,13 +180,13 @@
 "js/foundation/foundation.orbit.js": "sha256-8XqvMSYx+PaKHkPaTArg+LIk0/6tUZWfszbc9t8csPg=",
 "js/foundation/foundation.placeholder.js": "sha256-sXBwTSo80J9Y5mJXrQIlVm84BeWrplqq5PRb/vXsfc0=",
 "js/foundation/foundation.reveal.js": "sha256-8LKfYUd7OrAX0tGcKAzCPr4kEE98Qs6KIQFbPIuVcsM=",
-"js/foundation/foundation.section.js": "sha256-SQtixAaJGYnUA5ZwzGT8Yh8jYYPKIUexnhyvlPNJjBA=",
-"js/foundation/foundation.tooltips.js": "sha256-SsIdLLGSeP99aS/3Dm/6q0FPueLJwp9nbcvVz81kAdo=",
-"js/foundation/foundation.topbar.js": "sha256-9PHiCrxJOfVjsWBn8k9zdgtECoTeWLX8s8zGKBRdMUc=",
-"js/vendor/custom.modernizr.js": "sha256-BE0SuLr9QExg/BfVJfb4n8Ks+ieNrmPGhnMdqxVZJXg=",
-"js/vendor/zepto.js": "sha256-O9VSM0lAqBiDd3Ci3oxx8gr61sv4UBh2yE14myTpUSc=",
-"js/vendor/zepto.min.js": "sha256-s1+ytIHdpJskvFPOw+qtw+8/W6RYjQmiAp2gahXjnGU="
-}
-}
-]
+                "js/foundation/foundation.section.js": "sha256-SQtixAaJGYnUA5ZwzGT8Yh8jYYPKIUexnhyvlPNJjBA=",
+                "js/foundation/foundation.tooltips.js": "sha256-SsIdLLGSeP99aS/3Dm/6q0FPueLJwp9nbcvVz81kAdo=",
+                "js/foundation/foundation.topbar.js": "sha256-9PHiCrxJOfVjsWBn8k9zdgtECoTeWLX8s8zGKBRdMUc=",
+                "js/vendor/custom.modernizr.js": "sha256-BE0SuLr9QExg/BfVJfb4n8Ks+ieNrmPGhnMdqxVZJXg=",
+                "js/vendor/zepto.js": "sha256-O9VSM0lAqBiDd3Ci3oxx8gr61sv4UBh2yE14myTpUSc=",
+                "js/vendor/zepto.min.js": "sha256-s1+ytIHdpJskvFPOw+qtw+8/W6RYjQmiAp2gahXjnGU="
+            }
+        }
+    ]
 }
