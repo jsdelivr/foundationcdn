@@ -1,8 +1,8 @@
 {
 "vers": [
 {
-"num": 612,
-"name": "6.1.2",
+"num": 620,
+"name": "6.2.0",
 "mainJs": "foundation.min.js",
 "mainCss": "foundation.min.css",
 "files": [
@@ -38,36 +38,36 @@
 "js/foundation.util.triggers.js"
 ],
 "sri": {
-"foundation.min.css": "sha256-ZVejNUFfkskPWeckewcs0dnPJa1ubBu9mF+ejsjoPDg=",
-"foundation.min.js": "sha256-RKexMIEYcvQSXDkHJ0qLXFXZiXfl3nkeMJovUep4iS0=",
-"js/foundation.abide.js": "sha256-nef6ao9574GFaKZis+78YSBh7qSLEnwRIGk1t7n/aqs=",
-"js/foundation.accordion.js": "sha256-GSy4axgmbwBUGq2Mqik7Ap0uiUMLZtBtu9ZdJRpDp3k=",
-"js/foundation.accordionMenu.js": "sha256-KUtqGVmXSvTvkWrIFesSRL58+f9hACa3UZeWRnuVW2U=",
-"js/foundation.core.js": "sha256-FIuCKpYOPs+tUM+AYM7xZY4afdFXcQ7OogcaTJdGvfI=",
-"js/foundation.drilldown.js": "sha256-zPZWAOdPyyFXLar35TeYlinJPW1x7UhdwvkmIperILA=",
-"js/foundation.dropdown.js": "sha256-6W6ogPprZo/QCJ7GVXRRSc0xC6292XZjUO6v3CNmUoo=",
-"js/foundation.dropdownMenu.js": "sha256-jCUIgDkaGdsWMd9+1zjBGCp4O5xoZj0Lfud51rE/EmY=",
-"js/foundation.equalizer.js": "sha256-gRcShXH0Zyo/Wj+AwHtwVcrc7VDT2SfF7ravm3Namas=",
-"js/foundation.interchange.js": "sha256-IHeJZevoUuIEAqQA86+GyogQ+PWagtyR3jObOn1qG9A=",
-"js/foundation.magellan.js": "sha256-2Po/hFezH245XzT9R7L13ejhr9fjJa+daa516IwPogA=",
-"js/foundation.offcanvas.js": "sha256-YxCxei/6Zcz3DM6uIqQWkVde+Uyr2+Xng1DOKBTS3Ec=",
-"js/foundation.orbit.js": "sha256-2lQJrRCF+v83aUo0dcrRKXsSdy5CZ1vmZYiO8zcwHIU=",
-"js/foundation.responsiveMenu.js": "sha256-p42lkBMWsAv+dztpHnuBhD7VJlFF4PJ0sgg8ODeSe/E=",
-"js/foundation.responsiveToggle.js": "sha256-UsU517gjNjvefLlnR5p6WBLEkuzqfl6xvdxsCipcCtU=",
-"js/foundation.reveal.js": "sha256-W5Ll+S3fATNIRrMLJsFkBMyh++iKPpowIuHa29tFVak=",
-"js/foundation.slider.js": "sha256-rCcuvik4xmQKGUHEjnhLn1OiDq319OV0CfXRfBgf44U=",
-"js/foundation.sticky.js": "sha256-qJ5BnZYBorSwDyHpduRsCch4ij4cGuWQUE7KywXRlZM=",
-"js/foundation.tabs.js": "sha256-KV7QKGviBOYtbCVfH9JAGCNPk8/ASWnLyU6/VaK+5uY=",
-"js/foundation.toggler.js": "sha256-G+nOiwtqoSMIPj4Orfnm6Caa6G4WGcRSWBh1iVOQ6gE=",
-"js/foundation.tooltip.js": "sha256-FmYDyewYVy5E27TOVhLw6ukqnKZQrXTrBt7eojKoKpY=",
-"js/foundation.util.box.js": "sha256-ackJXCa+MLm3luxMwi6yppTlw49Rd7zHsPfjMsQXWLM=",
-"js/foundation.util.keyboard.js": "sha256-8F5HLWhplmz9A/dnF8drBwpntdgYBnhOf76E7IKiQOI=",
-"js/foundation.util.mediaQuery.js": "sha256-XbURvsNQEY23ls0dAqKPEnOyILFJ1AItvWObugGh+ys=",
-"js/foundation.util.motion.js": "sha256-1LNxlgihrmdiNiRJhzWuwRATjbPa7wxofBIreJuu4CI=",
-"js/foundation.util.nest.js": "sha256-RVnQYc28bGsMUzKXbaxYzospk/agnUk0HIQe+6H645E=",
-"js/foundation.util.timerAndImageLoader.js": "sha256-NTGP2ffppSga+IUzTGX093ijXS3/zP/SGnRAe2Qkg3U=",
-"js/foundation.util.touch.js": "sha256-KXGYcRKTJ+I1oj7lw1CBX253vGUBFBNjWUBE4+N6AZM=",
-"js/foundation.util.triggers.js": "sha256-LwKTDJhdyxQai/6AQxKFTasyu92vuNg6/nm8yMm9er0="
+"foundation.min.css": "sha256-dIaHWUg/Lu3PeHMeMlCcrF7ZQ35n+pMpiKyhV7v0kTg=",
+"foundation.min.js": "sha256-o0y723WXPYZg0BU8bFWAoZxik0vXx0oEX1xT63lFOBM=",
+"js/foundation.abide.js": "sha256-EXJmqoMf6xsRQzQt7jXSTfjDfj+SEnhAZ/Q6Si5TCJw=",
+"js/foundation.accordion.js": "sha256-q0gCkUvPfb0U5t2G4IF3vQG//YDxPnxcz96Hhqtjlps=",
+"js/foundation.accordionMenu.js": "sha256-dGsNJD1ag5Ln7WBmpUF4vs8932tmuy41rg3xtDNIqnY=",
+"js/foundation.core.js": "sha256-ftmbhWXpBWb2v1JfhTlCEFPd7UOBu3Rq7+IQs45T52o=",
+"js/foundation.drilldown.js": "sha256-q1l2dTJsEPa9v2NPTBV417ckuDhFuw6s8LiXwsLbZP4=",
+"js/foundation.dropdown.js": "sha256-9PqqRujLI222TtcZjIyljyvibryH58vAkWQAx5219Mw=",
+"js/foundation.dropdownMenu.js": "sha256-EjgtFueltN+dEDP23ZrMivfy9RuJZ3Ew1Jv2gf3LAdI=",
+"js/foundation.equalizer.js": "sha256-fmvfdcfZUvmYbPfonhVwFkOc471BnqNnrFRzI8bBDw4=",
+"js/foundation.interchange.js": "sha256-NYWTqXsosrRQcaCMlYa6uuEyhzU5IaRskinQSvFlA7M=",
+"js/foundation.magellan.js": "sha256-rPbEpNkOlSrjpy4KDMXDuXzti9zy3jIZ1cZYb/Q3YCA=",
+"js/foundation.offcanvas.js": "sha256-9cSlMymkv8YAtR9qKtJhWNnvlkt0rjiL/efUs0nEfgU=",
+"js/foundation.orbit.js": "sha256-o72TF2FgxNjRhnAglJnK2dpez3lTAgGTbfL0LlTXDZM=",
+"js/foundation.responsiveMenu.js": "sha256-+jrAO8fsF+TLa0QYeyUdrQZOCXAmxLfSiDFyhp7k6jY=",
+"js/foundation.responsiveToggle.js": "sha256-qogOv3aM0tetK9J1QXQodmsMrv39xqUADT1YTtatlpg=",
+"js/foundation.reveal.js": "sha256-+dsFi5pQmzlqctrGA9LesqUF1rPKWZH/SBrlozu7kGg=",
+"js/foundation.slider.js": "sha256-/rmxuTTtubxRaR+oFQ6SY+UJ5CjT5W5FvhIvLDn+3UQ=",
+"js/foundation.sticky.js": "sha256-OUzbO4R1GVIDtFV5UnNQEfa8xpkAtINLF3nLQah4cDw=",
+"js/foundation.tabs.js": "sha256-TS6GuGylqqG9qUjLY5Jz0CvJ21/xMSyv+hrT6i7Wjws=",
+"js/foundation.toggler.js": "sha256-4tbRuQpDZHWzFdoN4JuJqZhvOOJvMCupBKDwWX9X4/g=",
+"js/foundation.tooltip.js": "sha256-6loAIr/F1m0YjTkSe4N9geF6pZk5tXSF3Kb2bMqB0bw=",
+"js/foundation.util.box.js": "sha256-Fk0ZCeH73e6jhL64H2ofIOpnES4lx07jjQApkKCH67A=",
+"js/foundation.util.keyboard.js": "sha256-Bw+VSTjFX6lwv9BkH+Hi2QoKm3Q0n7BqiOrJZsm1gkQ=",
+"js/foundation.util.mediaQuery.js": "sha256-aCWfEhQI3BIze3ZwmDJRXNP92ouVgvGEjh38O5qQSPQ=",
+"js/foundation.util.motion.js": "sha256-/EXWCNL0NARogXcVzxnj83t900k/AhGiMZFE6n+GJEI=",
+"js/foundation.util.nest.js": "sha256-1WNCJn18uLy5un2yoSM+PdBB0Hbo3GOUm7VNIFVbJyk=",
+"js/foundation.util.timerAndImageLoader.js": "sha256-cI5UFodAwqxMh8xTdesyHogb+KVKQpOQvgPX3AWM/GI=",
+"js/foundation.util.touch.js": "sha256-j3HutB6RhnDufuqC3mQx8SrWmVPRskqthg4XSk081xI=",
+"js/foundation.util.triggers.js": "sha256-SzuN9eLQoNw0H+VGjquUUk9VIEGYUdaVikRFL3JnapY="
 }
 },
 {
@@ -180,13 +180,13 @@
 "js/foundation/foundation.orbit.js": "sha256-8XqvMSYx+PaKHkPaTArg+LIk0/6tUZWfszbc9t8csPg=",
 "js/foundation/foundation.placeholder.js": "sha256-sXBwTSo80J9Y5mJXrQIlVm84BeWrplqq5PRb/vXsfc0=",
 "js/foundation/foundation.reveal.js": "sha256-8LKfYUd7OrAX0tGcKAzCPr4kEE98Qs6KIQFbPIuVcsM=",
-                "js/foundation/foundation.section.js": "sha256-SQtixAaJGYnUA5ZwzGT8Yh8jYYPKIUexnhyvlPNJjBA=",
-                "js/foundation/foundation.tooltips.js": "sha256-SsIdLLGSeP99aS/3Dm/6q0FPueLJwp9nbcvVz81kAdo=",
-                "js/foundation/foundation.topbar.js": "sha256-9PHiCrxJOfVjsWBn8k9zdgtECoTeWLX8s8zGKBRdMUc=",
-                "js/vendor/custom.modernizr.js": "sha256-BE0SuLr9QExg/BfVJfb4n8Ks+ieNrmPGhnMdqxVZJXg=",
-                "js/vendor/zepto.js": "sha256-O9VSM0lAqBiDd3Ci3oxx8gr61sv4UBh2yE14myTpUSc=",
-                "js/vendor/zepto.min.js": "sha256-s1+ytIHdpJskvFPOw+qtw+8/W6RYjQmiAp2gahXjnGU="
-            }
-        }
-    ]
+"js/foundation/foundation.section.js": "sha256-SQtixAaJGYnUA5ZwzGT8Yh8jYYPKIUexnhyvlPNJjBA=",
+"js/foundation/foundation.tooltips.js": "sha256-SsIdLLGSeP99aS/3Dm/6q0FPueLJwp9nbcvVz81kAdo=",
+"js/foundation/foundation.topbar.js": "sha256-9PHiCrxJOfVjsWBn8k9zdgtECoTeWLX8s8zGKBRdMUc=",
+"js/vendor/custom.modernizr.js": "sha256-BE0SuLr9QExg/BfVJfb4n8Ks+ieNrmPGhnMdqxVZJXg=",
+"js/vendor/zepto.js": "sha256-O9VSM0lAqBiDd3Ci3oxx8gr61sv4UBh2yE14myTpUSc=",
+"js/vendor/zepto.min.js": "sha256-s1+ytIHdpJskvFPOw+qtw+8/W6RYjQmiAp2gahXjnGU="
+}
+}
+]
 }
