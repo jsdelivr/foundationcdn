@@ -1,8 +1,9 @@
+
 {
 "vers": [
 {
-"num": "624-rc2",
-"name": "6.2.4-rc2",
+"num": 624,
+"name": "6.2.4",
 "mainJs": "foundation.min.js",
 "mainCss": "foundation.min.css",
 "files": [
